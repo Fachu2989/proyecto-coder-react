@@ -11,7 +11,7 @@ export const Cartwidget = () => {
     <div>
         <Link to='/cart'>
           <img className='carrito' src={carrito}alt="cart-widget" />
-          {totalQuantity}
+          <h3 className="cuentaCarrito">{totalQuantity()}</h3>
         </Link>
     </div>
   )

@@ -1,5 +1,11 @@
 .Grid{
     display: grid;
     grid-template-columns: 2fr 2fr;
-
+    margin: 2;
+    box-sizing: border-box;
+}
+.ItemImg{
+    object-fit: cover;
+    width: 400px;
+    height:400px;
 }

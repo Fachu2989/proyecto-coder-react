@@ -1,0 +1,6 @@
+.greeting{
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    font-family: 'Roboto';
+}
