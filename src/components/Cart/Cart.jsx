@@ -1,17 +1,19 @@
 import { useContext } from "react"
-import { CartContext } from "../../context/CartContext"
 import { Link } from "react-router-dom"
 import { CartItem } from "../CartItem/CartItem"
-
+import CartContext from "../../context/CartContext"
 
 
 export const Cart = () => {
-    const {cart, clearCart,totalQuantity,total}=useContext(CartContext)
+    const {cart, clearCart,totalQuantity,Total}=useContext(CartContext)
+    console.log(Total())
+    console.log(totalQuantity())
 
-    if(totalQuantity===0){
+    if(totalQuantity()===0){
         return(
             <div>
                 <h1>no hay item en el carrito</h1>
+
                 <Link to='/'>Productos</Link>
             </div>
         )
@@ -19,10 +21,14 @@ export const Cart = () => {
 
   return (
     <div>
+        <h2>Usted tiene en el carrito {totalQuantity()} productos</h2>
+        
         {cart.map(c=> <CartItem key={c.id} {...c}/>)}
-        <h3>Total: ${total}</h3>
+
+        <h3>Total: {Total()}</h3>
+
         <button onClick={()=>clearCart()}>Limpiar Carrito</button>
-        <Link to='/checout'>Checkout</Link>
+        <Link to='/checkout'>Checkout</Link>
     </div>
   )
 }

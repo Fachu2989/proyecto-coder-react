@@ -2,8 +2,8 @@
 import { useState } from "react"
 import { ItemCount } from "../ItemCount/ItemCount"
 import { Link } from "react-router-dom"
-import { CartContext } from "../../context/CartContext"
 import { useContext } from "react"
+import CartContext from "../../context/CartContext"
 
 
 export const ItemDetail = ({id,nombre,precio,categoria,imagen,stock,descripcion}) => {
@@ -21,6 +21,9 @@ export const ItemDetail = ({id,nombre,precio,categoria,imagen,stock,descripcion}
     addItem(item,quantity)
         
     }
+
+    
+    
     
     
 
