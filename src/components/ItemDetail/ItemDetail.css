@@ -1,0 +1,28 @@
+.ItemDetalle{
+    margin-bottom: 1rem;
+}
+
+.InfoDetail{
+    display: block;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.Descripcion{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+ 
+.totales{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem;
+}
+
+.finalizar{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
